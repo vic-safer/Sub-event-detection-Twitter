@@ -57,12 +57,12 @@ best_param: Uses RandomizedSearchCV to find the best hyperparameters.
 gridsearch: Similar to best_param but uses GridSearchCV from scikit-learn.
 analysis: Visualizes the most important features for classification.
 
-Note :
+- Note :
 To invoke any function from the model classes, you need to create a function in main.py and instantiate an object of the class beforehand. For example:
 def xgboost_pred(): 
 model = XGBoostModel(62) 
 acc = model.train() 
-# model.prediction('/home/axfrl/Documents/X_3A/INF554/projet_twitter/Projet Twitter')
+model.prediction('/home/axfrl/Documents/X_3A/INF554/projet_twitter/Projet Twitter')
 model.gridsearch() 
 print("Accuracy: ", acc)
 
