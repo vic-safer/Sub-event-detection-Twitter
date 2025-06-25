@@ -4,7 +4,7 @@ Note : each notebook of the preprocessing pipeline gives a certain dataframe in 
 It is then possible to create new dataframes by selecting the features you want from the several dataframes, merging by using the key
 The ones we kept to classify is explained in the written report
 
-Preprocessing_NLTK_vectors.ipynb :
+- Preprocessing_NLTK_vectors.ipynb :
 
 This notebook transforms the series of 16 matches into a single dataframe of 2137 periods, and the 4 test matches in a single dataframe of 516 periods
 Each period is represented by a vector with 206 dimensions in which you have 200 GloVe coordinates and 5 features (label, number of tweets of the period, number of tweets of the period + number of RT of tweets coming from the period, PeriodID, ID, growth rate of the number of tweets). 
@@ -14,7 +14,7 @@ final name for the training dataset : df_train_NLTK.csv
 final name for the training dataset : df_test_NLTK.csv
 
 
-Preprocessing_features_USE.ipynb :
+- Preprocessing_features_USE.ipynb :
 
 This notebook transforms the series of 16 training matches into a single dataframe of 2137 periods, and the 4 test matches in a single dataframe of 516 periods
 path_xxxx variables : change the paths of the raw data
@@ -23,7 +23,7 @@ final name for the training dataset : df_by_period_nuit.csv
 final name for the test dataset : df_test_nuit.csv
 
 
-Test.ipynb :
+- Test.ipynb :
 Note : you need the dataframe with the score_cosine, the dataframe given by Preprocessing_features_USE.ipynb
 
 This notebook is here to test the preprocessed dataset with a classifier
